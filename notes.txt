@@ -1,0 +1,12 @@
+Why TypeScript + React 
+
+-With static type checking, you get to learn about potential bugs as you are typing code, than heading to the browser and figuring out at runtime.
+-Provides way to describe the shape of the object hence providing better documentation and autocomplete
+-Makes maintenance and refactoring large code bases much easier
+
+Type should be used when we building application and interface should be used when we building libraries.
+
+
+In the 6th video props child component it is important please see
+
+For css type we have to keep in mind React.CSSProperties
