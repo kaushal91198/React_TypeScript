@@ -9,6 +9,12 @@ import PersonList from './components/PersonList';
 import Status from './components/Status';
 import Input from './components/Input';
 import Container from './components/Container';
+import Users from './components/states/Users';
+import Counter from './components/reducers/counter';
+import { ThemeContextProvider } from './components/context/ThemeContext';
+import Box from './components/context/Box';
+import { UserContextProvider } from './components/context/UserContext';
+import User from './components/context/UserCo'
 
 
 function App() {
@@ -35,10 +41,10 @@ function App() {
   return (
     <div className="App">
 
-      <Container styles = {{ border: '1px solid black', padding: '1 rem' }}/>
+      <Container styles={{ border: '1px solid black', padding: '1 rem' }} />
 
       <Greet name='Kaushal' messageCount={10} isLoggedIn={true} />
-      
+
       <Greet name='Munno' isLoggedIn={true} />
 
       <Person name={personName} />
@@ -63,6 +69,18 @@ function App() {
       />
 
       <Input value='munno' handleChange={(event) => { console.log(event) }} />
+
+      <Users />
+
+      <Counter />
+
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
+
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
 
     </div>
   );

@@ -10,3 +10,7 @@ Type should be used when we building application and interface should be used wh
 In the 6th video props child component it is important please see
 
 For css type we have to keep in mind React.CSSProperties
+
+
+usecontext important video
+
